@@ -1,0 +1,62 @@
+/* General Purpose Stylesheet - Applied to all documents */
+
+h1, h2, h3, h4, h5, h6, p, li, td, th {
+    font-family: "Aptos", sans-serif;
+}
+
+/* Document Title - Maps to Word 'Title' Style */
+h1 {
+    font-size: 24pt;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20pt;
+}
+
+/* Main Headings - Maps to Word 'Heading 1' Style */
+h2 {
+    font-size: 16pt;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    margin-top: 18pt;
+}
+
+/* Sub Headings - Maps to Word 'Heading 2' Style */
+h3 {
+    font-size: 14pt;
+    color: #333333;
+}
+
+/* Standard Body Text - Maps to Word 'Normal' Style */
+p {
+    font-size: 12pt;
+    line-height: 1.5;
+    margin-bottom: 10pt;
+}
+
+/* Table Formatting */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15pt;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 5pt;
+    font-size: 11pt;
+    text-align: left;
+}
+
+/* Warnings / Notes */
+.note {
+    background-color: #fff2cc;
+    border-left: 4px solid #ffc000;
+    padding: 10pt;
+    font-style: italic;
+/* AI Update Highlighting */
+.ai-update {
+    background-color: #ffff00; /* Bright yellow */
+    color: #000000;
+    font-weight: bold;
+}
