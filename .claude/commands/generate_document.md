@@ -33,12 +33,12 @@ Analyze the User Input to extract the following:
 - Ensure every mandatory heading and table required by the Defense Standard (from OCR) is present in the HTML. If data is missing, insert "[REQUIRES USER INPUT]".
 - PROTOCOL DATA RULE: If the user provides Binary or NMEA protocol data, insert it exactly as provided. Wrap it in an HTML <pre> tag to preserve formatting, and add a visible warning flag directly above it: <p class="note">[MANUAL VERIFICATION REQUIRED: BINARY/NMEA PROTOCOL DATA]</p>.
 - ASSET AUTO-RECOGNITION RULE:
-1. Extract the Product Family and Series from the user's input (e.g., Product Code "OCT3-T-99" -> Family: OCT3, Series: T).
-2. List the files in the /assets folder.
-3. Look for files starting with that Product Family and Series (e.g., OCT3_T+*.png).
-4. If a matching file is found, read it, convert to Base64, and embed it using the <figure> tag.
-5. Parse the filename according to the Image Naming Convention Protocol in CLAUDE.md to auto-generate the correct <figcaption>.
-6. If no matching image is found, insert the [REQUIRES USER INPUT] placeholder.
+  1. Extract the Product Family and Series from the user's input (e.g., Product Code "OCT3-T-99" -> Family: OCT3, Series: T).
+  2. List the files in the /assets folder.
+  3. Look for files starting with that Product Family and Series (e.g., OCT3_T+*.png).
+  4. If a matching file is found, read it, convert to Base64, and embed it using the <figure> tag.
+  5. Parse the filename according to the Image Naming Convention Protocol in CLAUDE.md to auto-generate the correct <figcaption>.
+  6. If no matching image is found, insert the [REQUIRES USER INPUT] placeholder.
 
 ### Step 6: Generate MS Word Document
 - Run the Python script: python scripts/generate_doc.py --html_output "<drafted_html>" --docx_name "<Document Code>_<Document Title>.docx" --doc_type "<Document Type>"
