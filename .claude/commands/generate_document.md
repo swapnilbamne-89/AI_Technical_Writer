@@ -28,7 +28,7 @@ Analyze the User Input to extract the following:
 - Guardrail Check: Ensure all terminology used in the upcoming draft strictly adheres to the Glossary.
 
 ### Step 5: Draft Content (HTML)
-- Draft all content as clean, semantic HTML using standard tags (<h1>, <h2>, <p>, <table>, <ul>, <li>).
+- Draft all content as clean, semantic HTML using standard tags "(<h1>, <h2>, <p>, <table>, <ul>, <li>)".
 - Do NOT include inline CSS styles in the HTMLexcept for <img> tags which require width constraints.
 - Ensure every mandatory heading and table required by the Defense Standard (from OCR) is present in the HTML. If data is missing, insert "[REQUIRES USER INPUT]".
 - PROTOCOL DATA RULE: If the user provides Binary or NMEA protocol data, insert it exactly as provided. Wrap it in an HTML <pre> tag to preserve formatting, and add a visible warning flag directly above it: <p class="note">[MANUAL VERIFICATION REQUIRED: BINARY/NMEA PROTOCOL DATA]</p>.
